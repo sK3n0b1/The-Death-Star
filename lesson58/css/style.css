@@ -1,0 +1,56 @@
+body {
+    background: #000;
+    color: #5de619;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background: #5a5858;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box span {
+    opacity: 0;
+}
+
+.box:hover span {
+    opacity: 1;
+}
+
+
+
+.box__scale {
+    background: #fff;
+    height: 30px;
+    position: absolute;
+    top: -100px;
+    left: -300px;
+    right: 600px;
+}
+
+.box:hover .box__scale {
+    right: -300px;
+}
+
+
+.box__scale{
+    transition: 2s;
+    transition-timing-function: linear;
+}
+.box span{
+    transition-delay: 2s;
+    transition-duration: 2s;
+}
